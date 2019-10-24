@@ -52,11 +52,11 @@ Next to this _audio preferences_, there's a tiny speaker that acts like a audio 
 
 #### Want Tahiti Looper ?
 
-Free during beta. Available for macOS.
+Available for macOS.
 
 Press the Palm Tree (again ?) to download.
 
-[![logo](/assets/img/logo.png)](http://bit.ly/TahitiLooperV01)
+[![logo](/media/logo.png)](http://bit.ly/TahitiLooperV01)
 
 ## Why the world needs another looper
 
