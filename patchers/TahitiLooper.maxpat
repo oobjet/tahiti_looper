@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 0,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 34.0, 79.0, 1234.0, 655.0 ],
+		"rect" : [ 124.0, 79.0, 1114.0, 687.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -37,7 +37,47 @@
 		"tags" : "",
 		"style" : "",
 		"subpatcher_template" : "",
+		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-28",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 37.0, 321.0, 150.0, 20.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 31.0, 314.253936999999951, 108.0, 20.0 ],
+					"text" : "initialize SoftStep"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-22",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 61.0, 198.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-21",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 61.0, 241.5, 24.0, 24.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 5.0, 310.253937000000008, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-17",
 					"maxclass" : "comment",
@@ -50,11 +90,13 @@
 			}
 , 			{
 				"box" : 				{
+					"basictuning" : 440,
 					"data" : 					{
 						"clips" : [ 							{
 								"absolutepath" : "FemVoice.aif",
 								"filename" : "FemVoice.aif",
 								"filekind" : "audiofile",
+								"id" : "u665001798",
 								"loop" : 0,
 								"content_state" : 								{
 									"pitchcorrection" : [ 0 ],
@@ -78,12 +120,21 @@
  ]
 					}
 ,
+					"followglobaltempo" : 0,
+					"formantcorrection" : 0,
 					"id" : "obj-16",
 					"maxclass" : "playlist~",
+					"mode" : "basic",
 					"numinlets" : 1,
 					"numoutlets" : 5,
+					"originallength" : [ 0.0, "ticks" ],
+					"originaltempo" : 120.0,
 					"outlettype" : [ "signal", "signal", "signal", "", "dictionary" ],
-					"patching_rect" : [ 7.0, 681.0, 150.0, 30.0 ]
+					"parameter_enable" : 0,
+					"patching_rect" : [ 7.0, 681.0, 150.0, 30.0 ],
+					"pitchcorrection" : 0,
+					"quality" : "basic",
+					"timestretch" : [ 0 ]
 				}
 
 			}
@@ -97,7 +148,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 446.0, 153.0, 150.0, 33.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 314.253937000000008, 228.25, 20.0 ],
+					"presentation_rect" : [ 5.0, 338.253937000000008, 228.25, 20.0 ],
 					"text" : "Tahiti Plugins I infos, updates, FAQ,..."
 				}
 
@@ -113,7 +164,7 @@
 					"parameter_enable" : 0,
 					"patching_rect" : [ 446.0, 193.502624999999995, 181.698730000000012, 14.994740999999999 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 314.253937000000008, 226.0, 20.0 ]
+					"presentation_rect" : [ 5.0, 338.253937000000008, 226.0, 20.0 ]
 				}
 
 			}
@@ -163,7 +214,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-61",
-					"items" : [ "to op-1 Bus IAC 2", ",", "to Max 1", ",", "to Max 2" ],
+					"items" : [ "to Max 1", ",", "to Max 2", ",", "Launchpad Mini", ",", "SSCOM Port 1", ",", "SSCOM Port 2" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -201,7 +252,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -234,6 +285,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"comment" : "",
@@ -492,7 +544,7 @@
 					"patching_rect" : [ 584.0, 85.0, 150.0, 20.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 114.0, 263.0, 117.0, 20.0 ],
-					"text" : "reset"
+					"text" : "play"
 				}
 
 			}
@@ -534,7 +586,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -567,6 +619,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-43",
@@ -806,7 +859,7 @@
 				"box" : 				{
 					"id" : "obj-24",
 					"maxclass" : "newobj",
-					"numinlets" : 0,
+					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patcher" : 					{
@@ -814,13 +867,13 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 59.0, 104.0, 640.0, 480.0 ],
+						"rect" : [ 70.0, 104.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -847,7 +900,44 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-5",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 88.0, 23.0, 150.0, 20.0 ],
+									"text" : "initialize softstep"
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"comment" : "",
+									"id" : "obj-3",
+									"index" : 1,
+									"maxclass" : "inlet",
+									"numinlets" : 0,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"patching_rect" : [ 50.0, 18.0, 30.0, 30.0 ]
+								}
+
+							}
+, 							{
+								"box" : 								{
+									"id" : "obj-2",
+									"maxclass" : "button",
+									"numinlets" : 1,
+									"numoutlets" : 1,
+									"outlettype" : [ "bang" ],
+									"parameter_enable" : 0,
+									"patching_rect" : [ 50.0, 64.0, 24.0, 24.0 ]
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-13",
 									"maxclass" : "newobj",
@@ -878,7 +968,7 @@
 									"maxclass" : "outlet",
 									"numinlets" : 1,
 									"numoutlets" : 0,
-									"patching_rect" : [ 50.0, 211.0, 30.0, 30.0 ]
+									"patching_rect" : [ 60.5, 215.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -887,6 +977,20 @@
 								"patchline" : 								{
 									"destination" : [ "obj-17", 0 ],
 									"source" : [ "obj-13", 1 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-9", 0 ],
+									"source" : [ "obj-2", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
+									"destination" : [ "obj-2", 0 ],
+									"source" : [ "obj-3", 0 ]
 								}
 
 							}
@@ -979,7 +1083,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1012,6 +1116,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-1",
@@ -1237,7 +1342,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1270,6 +1375,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-119",
@@ -1600,7 +1706,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1633,6 +1739,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-61",
@@ -1790,7 +1897,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1823,6 +1930,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-19",
@@ -2348,7 +2456,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 0,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2381,6 +2489,7 @@
 						"tags" : "",
 						"style" : "",
 						"subpatcher_template" : "",
+						"assistshowspatchername" : 0,
 						"boxes" : [ 							{
 								"box" : 								{
 									"id" : "obj-146",
@@ -2486,7 +2595,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 215.0, 162.0, 50.0, 22.0 ],
-									"text" : "0"
+									"text" : "12"
 								}
 
 							}
@@ -2768,11 +2877,11 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 4 ],
-							"parameter_shortname" : "number[1]",
-							"parameter_type" : 3,
-							"parameter_longname" : "number[1]",
 							"parameter_initial_enable" : 1,
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_longname" : "number[1]",
+							"parameter_shortname" : "number[1]",
+							"parameter_type" : 3
 						}
 
 					}
@@ -2797,11 +2906,11 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_initial" : [ 8 ],
-							"parameter_shortname" : "number",
-							"parameter_type" : 3,
-							"parameter_longname" : "number",
 							"parameter_initial_enable" : 1,
-							"parameter_invisible" : 1
+							"parameter_invisible" : 1,
+							"parameter_longname" : "number",
+							"parameter_shortname" : "number",
+							"parameter_type" : 3
 						}
 
 					}
@@ -2857,10 +2966,10 @@
 					"presentation_rect" : [ 5.0, 60.0, 226.0, 201.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_shortname" : "pictctrl",
-							"parameter_type" : 0,
 							"parameter_longname" : "pictctrl",
-							"parameter_mmax" : 1.0
+							"parameter_mmax" : 1.0,
+							"parameter_shortname" : "pictctrl",
+							"parameter_type" : 0
 						}
 
 					}
@@ -3002,7 +3111,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 1 ],
-					"order" : 1,
 					"source" : [ "obj-2", 1 ]
 				}
 
@@ -3010,6 +3118,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-5", 0 ],
+					"order" : 1,
 					"source" : [ "obj-2", 0 ]
 				}
 
@@ -3018,7 +3127,7 @@
 				"patchline" : 				{
 					"destination" : [ "obj-63", 0 ],
 					"order" : 0,
-					"source" : [ "obj-2", 1 ]
+					"source" : [ "obj-2", 0 ]
 				}
 
 			}
@@ -3026,6 +3135,20 @@
 				"patchline" : 				{
 					"destination" : [ "obj-23", 0 ],
 					"source" : [ "obj-20", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-24", 0 ],
+					"source" : [ "obj-21", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-21", 0 ],
+					"source" : [ "obj-22", 0 ]
 				}
 
 			}
@@ -3210,13 +3333,14 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-4" : [ "pictctrl", "pictctrl", 0 ],
-			"obj-12" : [ "number[1]", "number[1]", 0 ],
 			"obj-11" : [ "number", "number", 0 ],
+			"obj-12" : [ "number[1]", "number[1]", 0 ],
+			"obj-4" : [ "pictctrl", "pictctrl", 0 ],
 			"parameterbanks" : 			{
 
 			}
-
+,
+			"inherited_shortname" : 1
 		}
 ,
 		"parameter_map" : 		{
@@ -3234,36 +3358,36 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "logo - button.png",
-				"bootpath" : "~/Documents/Max 8/Projects/TahitiLooper/media",
+				"bootpath" : "~/MEGAsync/Max 8/Projects/TahitiLooper/media",
 				"patcherrelativepath" : "../media",
 				"type" : "PNG",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "PRLooper~.maxpat",
-				"bootpath" : "~/Documents/Max 8/Projects/TahitiLooper/patchers",
+				"bootpath" : "~/MEGAsync/Max 8/Projects/TahitiLooper/patchers",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "fa_tapProcessor.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/fa",
-				"patcherrelativepath" : "../../../Library/fa",
+				"bootpath" : "~/MEGAsync/Max 8/Projects/TahitiLooper/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jk.stepcore.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jk.softstep v2.3",
-				"patcherrelativepath" : "../../../Library/jk.softstep v2.3",
+				"bootpath" : "~/MEGAsync/Max 8/Projects/TahitiLooper/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jk.softstep.maxpat",
-				"bootpath" : "~/Documents/Max 8/Library/jk.softstep v2.3",
-				"patcherrelativepath" : "../../../Library/jk.softstep v2.3",
+				"bootpath" : "~/MEGAsync/Max 8/Projects/TahitiLooper/patchers",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
