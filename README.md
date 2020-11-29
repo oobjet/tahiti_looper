@@ -34,7 +34,7 @@ Give it a try.
 
 You can start playing live-looping pieces of music that EVOLVE. Not always the same rythm with the same length. But it still stay perfectly SYNCHRONIZED. You can choose the DENSITY (number of loops) and the GRANULOSITY (number of beats).
 
-A good example of what you can do is my own version of Terry Riley's IN C (link)
+A good example of what you can do is my own version of Terry Riley's IN C : [in c](https://objet.bandcamp.com/album/in-c-2) 
 
 #### Additional controls
 
