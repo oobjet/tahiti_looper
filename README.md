@@ -52,9 +52,13 @@ Next to this _audio preferences_, there's a tiny speaker that acts like a audio 
 
 #### Want Tahiti Looper ?
 
-Available for macOS.
+Available for macOS & Windows.
 
-Press the Palm Tree (again ?) to download.
+Download [Max](https://cycling74.com/downloads) at cycling74.
+
+Download or clone this repository.
+
+Open TahitiLooper.maxproj
 
 [![logo](/media/logo.png)](http://bit.ly/TahitiLooperV01)
 
