@@ -34,7 +34,11 @@ Give it a try.
 
 You can start playing live-looping pieces of music that EVOLVE. Not always the same rythm with the same length. But it still stay perfectly SYNCHRONIZED. You can choose the DENSITY (number of loops) and the GRANULOSITY (number of beats).
 
-A good example of what you can do is my own version of Terry Riley's IN C : [in c](https://objet.bandcamp.com/album/in-c-2) 
+A good example of what you can do is my own version of Terry Riley's IN C : 
+
+<iframe style="border: 0; width: 100%; height: 42px;" src="https://bandcamp.com/EmbeddedPlayer/album=456099347/size=small/bgcol=ffffff/linkcol=0687f5/transparent=true/" seamless><a href="https://objet.bandcamp.com/album/in-c-2">in c by Objet</a></iframe>
+
+[in c](https://objet.bandcamp.com/album/in-c-2) 
 
 #### Additional controls
 
@@ -131,3 +135,4 @@ No that's a perfectly normal behavior. If you try to record a loop that is way s
 *Sometimes, when I record a loop, it is not exactly syncronized on the right beat. Bug ?*
 
 If the *number of beats in the firt loop* parameter is too high and you first loop is quite short, you have to be very precise to get Tahiti Looper to find the right beats to close the loop. Try to lower this paramater or play a longer loop.
+
